@@ -16,13 +16,14 @@ body{
     background-color: #ffff;
     border-radius: 1rem;
     border:1px solid lightgrey;
-    height:50vh;
+    min-height:53vh;
     width:60%;
     margin-top: 9rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding:2rem 0rem 3rem 0rem;
+    border-top:2px solid #af4d58; 
 
 
 }
@@ -60,15 +61,71 @@ body{
     width:100%;
     outline: none;
  }
- form button{
-    background-color: #af4d58;
+ form .buttons{
+    display: flex;
+    align-items:start;
+    justify-content: flex-start;
+    margin-top:0.8rem;
+ }
+ form .buttons .view-btn{
+   background-color:rgb(204, 91, 50);
     color:#fff;
     font-size:1rem;
     text-transform: capitalize;
-    width:100%;
+    width:40%;
     height:3rem;
     border-radius:0.7rem;
     margin-top:1rem;
     cursor: pointer;
+    border:none !important;
+    margin-left: 2rem;
+ }
+ form .buttons .task-btn{
+    background-color: #af4d58;
+    color:#fff;
+    font-size:1rem;
+    text-transform: capitalize;
+    width:40%;
+    height:3rem;
+    border-radius:0.7rem;
+    margin-top:1rem;
+    cursor: pointer;
+   border:none !important;
+ }
 
+table {
+    width: 90%;
+    border-collapse: collapse;
+    
+}
+
+th,
+td {
+    border: 1px solid rgb(204, 209, 209);
+  
+    padding: 10px;
+    text-align: left;
+}
+ .delete-btn{
+    background-color:red;
+    color:#fff;
+    font-size:1rem;
+    text-transform: capitalize;
+    padding:0.5rem 1rem;
+    border-radius:0.4rem;
+    margin-top:1rem;
+    cursor: pointer;
+   border:none !important;
+ }
+
+  .edit-btn{
+    background-color:blueviolet;
+    color:#fff;
+    font-size:1rem;
+    text-transform: capitalize;
+    padding:0.5rem 1rem;
+    border-radius:0.4rem;
+    margin-top:1rem;
+    cursor: pointer;
+   border:none !important;
  }
